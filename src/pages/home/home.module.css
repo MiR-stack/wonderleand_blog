@@ -1,0 +1,145 @@
+.heroSection {
+  position: relative;
+}
+
+.heroSection::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../photos/mask-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px 0;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+.mask {
+  position: relative;
+}
+
+.mask::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../photos/mask-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
+}
+
+.newsletter {
+  background-color: #fff8e1;
+  padding-bottom: 100px;
+  position: relative;
+}
+.newsletter::before {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-image: url("../../photos/mask-1.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
+}
+
+.nlTitle {
+  text-transform: uppercase;
+  font-size: calc(1rem + 0.5vw);
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 35px;
+}
+
+.nlShortDec {
+  font-size: calc(0.6rem + 0.4vw);
+  color: #1a1a1a;
+}
+
+.nlInputGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.nlInput {
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+}
+
+.nlButton {
+  border: none;
+  outline: none;
+  background-color: #00796b;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 10px 20px;
+  color: aliceblue;
+}
+
+.nlImage {
+  height: 400px;
+  min-width: 300px;
+  background-image: url("../../photos/newsletter.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .brands {
+    gap: 10px;
+  }
+  .image {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .heroSection::before {
+    background-image: url("../../photos/mask-1.min.png");
+  }
+  .mask::before {
+    background-image: url("../../photos/mask-2.min.png");
+  }
+
+  .newsletter::before {
+    background-image: url("../../photos/mask-1.min.png");
+  }
+
+  .nlInputGroup {
+    justify-content: center;
+  }
+  .nlInput {
+    width: 100%;
+  }
+}
+/* 
+@media only screen and (max-width: 576px) {
+ 
+} */
